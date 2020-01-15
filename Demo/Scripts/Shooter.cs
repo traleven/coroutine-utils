@@ -13,7 +13,7 @@ public class Shooter : MonoBehaviour
 	{
 		StartCoroutine(
 			new System.Action(createFX.Play)
-			.Then ( new WaitForSeconds( createFX.duration ) )
+			.Then ( new WaitForSeconds( createFX.main.duration ) )
 			.Then ( ShootOnce )
 			.Then ( new WaitForSeconds( 1.5f ) )
 			.Then ( Shoot )
@@ -31,11 +31,11 @@ public class Shooter : MonoBehaviour
 			{
 				ParticleSystem explosion = (ParticleSystem)Instantiate(explosionPrefab, p.transform.position, p.transform.rotation);
 				StartCoroutine(
-					new WaitForSeconds( explosion.duration )
-					.Then( () => { DestroyObject(explosion.gameObject); } )
+					new WaitForSeconds( explosion.main.duration )
+					.Then( () => { Destroy(explosion.gameObject); } )
 				);
 			})
-			.Then( () => { DestroyObject(p.gameObject); } )
+			.Then( () => { Destroy(p.gameObject); } )
 		);
 	}
 }
