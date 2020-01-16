@@ -2,12 +2,14 @@
 
 public class Shooter : MonoBehaviour
 {
+#pragma warning disable IDE0044, CS0649
 	[SerializeField]
 	private GameObject projectile;
 	[SerializeField]
 	private ParticleSystem createFX;
 	[SerializeField]
 	private ParticleSystem explosionPrefab;
+#pragma warning restore IDE0044, CS0649
 	
 	public void Shoot()
 	{
