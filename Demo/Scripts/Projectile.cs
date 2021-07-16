@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public sealed class Projectile : MonoBehaviour
+namespace traleven.CoroutineUtils.Demo
 {
+	public sealed class Projectile : MonoBehaviour
+	{
+	}
 }
