@@ -1,0 +1,19 @@
+{
+  "name": "com.traleven.utils.coroutine-extensions",
+  "version": "1.0.0",
+  "displayName": "Coroutine Utils",
+  "description": "Utils and extensions for Unity coroutines",
+  "unity": "2017.1",
+  "documentationUrl": "https://github.com/traleven/coroutine-utils",
+  "licensesUrl": "https://github.com/traleven/coroutine-utils/blob/master/LICENSE",
+  "dependencies": {
+  },
+  "keywords": [
+  	"coroutine",
+    "utils"
+  ],
+  "author": {
+    "name": "traleven",
+    "url": "https://github.com/traleven"
+  }
+}
